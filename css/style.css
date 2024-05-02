@@ -1,0 +1,75 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Menetapkan tinggi 100% untuk memenuhi tinggi layar */
+    font-family: Arial, sans-serif; /* Ganti font sesuai keinginan Anda */
+    display: flex; /* Menggunakan flexbox untuk layout */
+    flex-direction: column; /* Menetapkan layout kolom */
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex: 1; /* Menyesuaikan flex untuk konten agar dapat tumbuh */
+    /* Kontainer flex untuk mengatur kolom kiri, tengah, dan kanan */
+}
+
+.left-column {
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+    margin: 10px;
+    background-color: #f0f0f0;
+    /* Kolom kiri memiliki fleksibilitas yang sama dengan kolom tengah dan kanan */
+}
+
+.middle-column {
+    flex: 2;
+    min-width: 200px;
+    padding: 20px;
+    margin: 10px;
+    background-color: #f0f0f0;
+    /* Kolom tengah memiliki fleksibilitas yang sama dengan kolom kiri dan kanan */
+}
+
+.right-column {
+    flex: 3;
+    min-width: 200px;
+    padding: 20px;
+    margin: 10px;
+    background-color: #f0f0f0;
+    /* Kolom kanan memiliki fleksibilitas yang dua kali lipat dari kolom kiri dan tengah */
+    overflow-x: auto; /* Membuat tabel dapat di-scroll secara horizontal */
+}
+
+/* Membuat tabel responsif */
+table {
+    width: 100%;
+    border-collapse: collapse; 
+    /* digunakan untuk menentukan model perbatasan dari tabel
+    border-collapse: collapse | separate | inherit */
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Membuat gambar responsif */
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+}
+
